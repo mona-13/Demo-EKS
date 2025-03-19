@@ -1,8 +1,11 @@
-def add(a, b):
-    return a + b
+# circle.py
+import math
 
-if __name__ == "__main__":
-    num1 = 5
-    num2 = 10
-    result = add(num1, num2)
-    print(f"The sum of {num1} and {num2} is: {result}")
+def calculate_area(radius):
+    """Calculate the area of a circle given its radius."""
+    if radius < 0:
+        raise ValueError("Radius cannot be negative.")
+    return math.pi * radius ** 2
+
+
+#
