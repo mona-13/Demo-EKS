@@ -3,7 +3,7 @@ FROM python:3.11-alpine
 
 WORKDIR /app
 
-COPY app.py
+COPY Sourcecode/circle.py /app/circle.py
 
 
-CMD ["python", "app.py"]
+CMD ["python", "circle.py"]
